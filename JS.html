@@ -1,0 +1,1730 @@
+<!-----------------------------------------------------------------
+    Código desenvolvido por: Marcelo Catache
+    GitHub: https://github.com/marcelocatache
+    Link do código: 
+    Fontes: Materiais da instituição de ensino
+    que estou estudando
+
+    Status do código:
+    Em Desenvolvimento...
+------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JAVASCRIPT</title>
+    <style>
+        body {
+            background-color: deepskyblue;
+            color: hsl(0, 0%, 0%);
+        }
+        h1 {
+            background-image: url("pergunta.jpg"); width: 200px; height: 130px; border: 1px solid #000;
+            color: hsl(0, 0%, 100%); margin-left: 500px;
+        }
+        h2{
+            color: rgb(255, 255, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>JAVASCRIPT</h1>
+
+
+    <!--  isso é um comentário  -->
+
+
+    <script type="text/javascript">
+        /*
+                            isso é um comentário
+                            */
+
+        //isso é um comentário
+    </script>
+
+
+    <br></br>
+    <br></br>
+
+
+    <h2>
+    <script type="text/javascript">
+        /* 01 */
+
+        // operadores aritméticos
+        document.write("01)<br>");
+
+        var a = 10,
+            b = 5,
+            c = 3;
+        var somar = a + b + c;
+        document.write("somar= " + somar + "_(operadores aritméticos)");
+    </script>
+    </h2>
+
+
+    <br>
+    <!--<br>-->
+
+
+    <!-- 02 -->
+
+    <p id="teste"></p>
+    <!--  é um #id  -->
+
+    <p class="teste1"></p>
+    <!--  é uma .class  -->
+
+    <script type="text/javascript">
+        /* 02 */
+
+        //#id e .class
+        document.write("02)<br>");
+
+        document.getElementById("teste").innerHTML = "Funciona?_(exemplo de exibição de um #id)"; //exibe um #id
+        document.write("_(exemplo de exibição de um #id)");
+        document.querySelector(".teste1").innerHTML = "Será que funciona?_(exemplo de exibição de um .class)"; //exibe uma .class
+        document.write("_(exemplo de exibição de um .class)");
+    </script>
+
+
+    <!--<br>-->
+    <br>
+
+
+    <script type="text/javascript">
+        /* 03 */
+
+        document.write("03)<br>");
+
+        alert("03) Mensagem"); //caixa de alerta
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 04 */
+
+        //concatenação(nesse caso: exibe uma frase com variaveis no meio)
+        document.write("04)<br>");
+
+        var dia = 15;
+        var mes = "Março";
+        var ano = 2021;
+        anocompleto = dia + " de " + mes + " de " + ano;
+        document.write(anocompleto);
+    </script>
+
+
+    <!--<br>-->
+    <!--<br>-->
+
+
+    <script src="teste01.js">
+        // script em arquivo (programa) externo
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 05 */
+
+        //calculo de variaveis constantes
+        document.write("05)<br>");
+
+        const pi = 3.14;
+        var x, y;
+        x = 3;
+        y = 2;
+        x = y * pi;
+        document.write("(const) pi = " + pi);
+        document.write("<br>x = " + x);
+        document.write("<br>y = " + y);
+        document.write("<br>x = y*pi = " + x);
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 06 */
+
+        //entrada de dados
+        document.write("06)<br>");
+
+        var nome = prompt("06) Digite o nome: ");
+        var nota = prompt("06) Digite a nota: ");
+        var msg = nome + ", sua nota foi: " + nota;
+        document.write(msg);
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 07 */
+
+        //arredonda variaveis FLOAT (decimais=9.9) para valores intEIROS
+        document.write("07)<br>");
+
+        var num1 = prompt("07) Digite um número:");
+        num1 = parseInt(num1);
+        var num2 = prompt("07) Digite outro número:");
+        num2 = parseInt(num2);
+        var result = num1 + num2;
+        document.write("result= " + result);
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 08 */
+
+        /*  operadores aritméticos (+ (adição), - (subtração), * (multiplicação), / (divisão), 
+        % (módulo = resto da divisão), ** (exponeciação))var x, y, z;  */
+        document.write("08)<br>");
+
+        y = 3;
+        z = 5;
+        x = 2 * y + z;
+        document.write("y = " + y);
+        document.write("<br>z = " + z);
+        document.write("<br>x = 2*y+z = " + x);
+
+
+        //operadores aritméticos (nesse caso: + e -)
+
+        var a, b;
+        a = prompt("08) digite um numero:");
+        a = parseInt(a);
+        b = prompt("08) Digite outro número:");
+        b = parseInt(b);
+        document.write("soma: " + (a + b));
+        document.write("<br>subtração: " + (a - b));
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type=text/javascript>
+        /* 09 */
+
+        /*---------------------------
+          operadores de atribuição :
+          a=b   :  a=b ;
+          a+=b  :  a=a+b ;
+          a-=b  :  a=a-b ;
+          a*=b  :  a=a*b ;
+          a/=b  :  a=a/b ;
+          a%=b  :  a=a%b ;
+          a**=b :  a=a**b. 
+        ---------------------------*/
+        document.write("09)<br>");
+
+        a = prompt("09) Digite um número:");
+        a = parseInt(a);
+        b = prompt("09) Digite outro número:");
+        b = parseInt(b);
+        a += b;
+        b -= 5;
+        document.write("a+=b = " + a);
+        document.write("<br>b-=5 = " + b);
+    </script>
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 10 */
+
+        //operadores de string (concatenação + e +=)
+        document.write("10)<br>");
+
+        a = prompt("10) Digite o nome:");
+        b = prompt("10) Digite o sobrenome:");
+        document.write(a + " " + b);
+        b += " ";
+        b += a;
+        document.write("<br>+b");
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 11 */
+
+        //incremento e decremento
+        document.write("11)<br>");
+
+        //pré-incremento
+        var a;
+        a = prompt("11) Digite um número:");
+        a = parseInt(a);
+        document.write("a = " + (++a));
+        document.write("<br>a = " + a);
+
+        //pós-incremento
+        var b;
+        b = prompt("11) Digite um número:");
+        b = parseInt(b);
+        document.write("<br>b = " + (b++));
+        document.write("<br>b = " + b);
+
+        //pré-decremento
+        var c;
+        c = prompt("11) Digite um número:");
+        c = parseInt(c);
+        document.write("<br>c = " + (--c));
+        document.write("<br>c = " + c);
+
+        //pós-decremento
+        var d;
+        d = prompt("11) Digite um número:");
+        d = parseInt(d);
+        document.write("<br>d = " + (d--));
+        document.write("<br>d = " + d);
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 12 */
+
+        //operadores de comparação (relacional)
+        document.write("12)<br>");
+
+        //igualdade
+        var a, b, res;
+        a = 10;
+        b = "10";
+        res = (a == b);
+        document.write("res = " + res);
+
+        //idêntico
+        var c, d, res1;
+        c = 10;
+        d = "10";
+        res1 = (c === d);
+        document.write("<br>res1 = " + res1);
+
+        //não igual - diferente
+        var e, f, res2;
+        e = 10;
+        f = "10";
+        res2 = (e != f);
+        document.write("<br>res2 = " + res2);
+
+        //não idêntico
+        var g, h, res3;
+        g = 10;
+        h = "10";
+        res3 = (g !== h);
+        document.write("<br>res3 = " + res3);
+
+        //menor e menor ou igual
+        var i, j, res4, res5;
+        i = 10;
+        j = 10;
+        res4 = (i < j);
+        res5 = (i <= j);
+        document.write("<br>res4 = " + res4); //menor
+        document.write("<br>res5 = " + res5); //menor ou igual
+
+        //maior e maior ou igual
+        var k, l, res6, res7;
+        k = 10;
+        l = 10;
+        res6 = (k < l);
+        res7 = (k <= l);
+        document.write("<br>res6 = " + res6); //maior
+        document.write("<br>res7 = " + res7); //maiorou igual
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 13 */
+
+        //operadores lógicos
+        document.write("13)<br>");
+
+        //não-not-!
+        var a, b, res;
+        a = 9;
+        b = 10;
+        res = !(a < b);
+        document.write("res= " + res);
+
+        //e-and-&&
+        var c, d, e, f;
+        c = 50;
+        d = 120;
+        e = 200;
+        f = (c <= d) && (c >= e);
+        document.write("<br>d = " + d);
+
+        //ou-or-||
+        var g, h, i, j;
+        g = 50;
+        h = 120;
+        i = 200;
+        j = (g <= h) || (g >= i);
+        document.write("<br>j = " + j);
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 14 */
+
+        //operador tenário
+        document.write("14)<br>");
+
+        var a, b, c, d, e;
+        a = 50;
+        b = 120;
+        c = 200;
+        d = (a <= b) ? "Verdadeiro" : "Falso";
+        e = (a >= c) ? "Verdadeiro" : "Falso";
+        document.write("d = " + d);
+        document.write("<br>e = " + e);
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 15 */
+
+        //decisão condicional
+        document.write("15)<br>");
+
+        var x = 5,
+            y = 5;
+        if (x > 0) {
+            document.write("positivo");
+        } else {
+            document.write("negativo");
+        }
+
+        if (y > 0) {
+            document.write("positivo");
+        } else {
+            if (y < 0) {
+                document.write("negativo");
+            } else {
+                document.write("NULO");
+            }
+        }
+
+        var a = 1,
+            b = 5,
+            c = 3,
+            d = 1;
+        if ((a < b) && (c + d > 0) || (c % 2 == 0)) {
+            document.write("verdadeiro");
+        } else {
+            document.write("falso");
+        }
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 16 */
+
+        //decisão condicional com múltiplas escolhas
+        document.write("16)<br>");
+
+        var x = 5;
+        switch (x) {
+            case 1:
+                document.write("DOMINGO");
+                break;
+            case 2:
+                document.write("SEGUNDA");
+                break;
+            case 3:
+                document.write("TERÇA");
+                break;
+            case 4:
+                document.write("QUARTA");
+                break;
+            case 5:
+                document.write("QUINTA");
+                break;
+            case 6:
+                document.write("SEXTA");
+                break;
+            case 7:
+                document.write("SÁBADO");
+                break;
+            default:
+                document.write("Dia inválido");
+                break;
+        }
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 17 */
+
+        //estrutura de repetição "while()"
+        document.write("17)<br>");
+
+        //contagem crescente
+        var x = 1;
+        while (x <= 10) {
+            documentt.write("<br>Contagem: " + x);
+            x++;
+        }
+
+        //contagem regressiva
+        var y = 10;
+        while (y > 10) {
+            document.write("<br>Contagem regressiva: " + y);
+            y++;
+        }
+
+        while (true) {
+            document.write("<br>Bom dia!");
+        }
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 18 */
+
+        //estrutura de repetição "do{} while()"
+        document.write("18)<br>");
+
+        var x = 1;
+        do {
+            document.write("<br>Contagem: " + x);
+            x++;
+        } while (x <= 10);
+
+        var y = 100;
+        do {
+            document.write("<br>Contagem: " + y);
+            y++;
+        } while (y <= 10);
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 19 */
+
+        //repetição "for()"
+        document.write("19)<br>");
+
+        //contagem crescente
+        for (var x = 1; x < 10; x++) {
+            document.write("<br>Contagem: " + x);
+        }
+
+        //contagem decrescente
+        for (var y = 10; y > 0; y--) {
+            document.write("<br>Contagem regressiva: " + x);
+        }
+
+        //contagem números pares
+        for (var z = 1; z <= 50; z++) {
+            if (x % 2 == 0) { // <<<<<<<<<<<<<<<<<<<<<<<<<<<<< LEMBRAR DE COLOCAR " {} " (COLCHETES)
+                document.write("<br>Contagem números pares: " + z);
+            }
+        }
+
+        //contagem de números pares múltiplos de 5 (terminados em 0 / divisíveis por 10)
+        for (var a = 1; a <= 50; a++) {
+            if ((a % 2 == 0) && (a % 5 == 0)) {
+                document.write("<br><b>Contagem: " + a + "</b>");
+            } else {
+                document.write("<br>Contagem: " + a);
+            }
+        }
+
+        //for com comando break;
+        for (var b = 1; b <= 50; b++) {
+            document.write("<br>Contagem: " + b);
+            if (b > 9)
+                break;
+            /*---------------------------------
+              o comando "break;" também pode
+              ser utilizado pelos comandos
+              "while()" e "do{} while()",
+              além do comando "for()", use
+              com cautela, pois se usado de
+              maneira errada, pode ocasionar
+              em paradas ou falhas no código
+            ---------------------------------*/
+        }
+
+        //prática dos alinhamentos sequenciais
+        for (var l = 1; l <= 5; l++) {
+            for (var c = 1; c <= 5; c++) {
+                document.write("<br>+ ");
+            }
+            document.write("<br>");
+        }
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 20 */
+
+        //Arrays
+        document.write("20)<br>");
+
+        //maneiras de inicializar
+        var a = [];
+        var a1 = [1, 2, 3, 4, 5];
+        var a2 = new Array(1, 2, 3, 4, 5);
+        var a3 = Array = [1, 2, 3, 4, 5];
+
+        //utilização e exibição do valores armazenados
+        var x1 = [1, 2, 3, 4, 5];
+        var x2 = new Array(1, 2, 3, 4, 5);
+        var x3 = Array = [1, 2, 3, 4, 5];
+        for (var i = 0; i < 5; i++) {
+            document.write("x1 = " + x1[i]);
+            document.write("<br>&emsp; x2 = " + x2[i]);
+            document.write("<br>&emsp; x3 = " + x3[i]);
+        } //DICA: o 1º índice de um array é sempre 0 (array [0])
+
+        //alternância nos tipos de dados dentro do mesmo array
+        var valor = [1, "dois", 3.1, "4", 5.55]; //essa vantagem requer maior atenção
+
+        //inicialização dentro de uma estrutura de repetição
+        var x = [];
+        for (var j = 0; j < 10; j++) {
+            x[j] = j + 1;
+        }
+        for (var j = 0; j < 10; j++) {
+            document.write("<br>x= " + x[j]);
+        }
+
+        //utilizando string
+        var y = ["DOMINGO", "SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SÁBADO"];
+        for (var k = 0; k < 7; k++) {
+            document.write("<br>" + y[k] + " é o " + (k + 1) + "º da semana!")
+        }
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 21 */
+
+        //funções e propriedades dos arrays
+        document.write("21)<br>");
+
+        //propriedade lenght()
+        var x = ["DOMINGO", "SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SÁBADO"];
+        document.write("O array x possui " + x.lenght + " valores de índices");
+        //resultado: O array x possui 7 valores de índices
+        document.write("<br>");
+
+        var y = ["DOMINGO", "SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SÁBADO"];
+        for (var i = 0; i < y.lenght; i++) {
+            document.write(y[i] + "º");
+        }
+        document.write("<br>");
+
+        //método push()
+        var z = [1, 2, 3];
+        z.push(4);
+        for (var j = 0; j < z.lenght; j++) {
+            document.write(z[j] + " ");
+            //resultado: 1 2 3 4
+        }
+        document.write("<br>");
+
+
+        //método join()
+        var a = [1, 2, 3];
+        var novaLista = a.join(" / "); // <-------------------------------- TALVEZ SEJA APÓSTROFO(') NO LUGAR DAS ASPAS
+        document.write(novaLista);
+        //resultado: 1 / 2 / 3
+        document.write("<br>");
+
+
+        //método pop()
+        var a = [1, 2, 3];
+        a.pop();
+        for (var k = 0; k < a.lenght; k++) {
+            document.write(a[k] + " ");
+            //resultado: 1 2 (retira o último valor)
+        }
+        document.write("<br>");
+
+
+        //método shift()
+        var b = [1, 2, 3];
+        b.shift();
+        for (var l = 0; l < b.lenght; l++) {
+            document.write(b[l] + " ");
+            //resultado: 2 3 (retira o primeiro valor)
+        }
+        document.write("<br>");
+
+        //método unshift()
+        var c = [1, 2, 3];
+        c.unshift(7, 8);
+        for (var m = 0; m < c.lenght; m++) {
+            document.write(c[m] + " ");
+            //resultado: 7 8 1 2 3
+        }
+        document.write("<br>");
+
+        //método splice()
+        var d = ['a', 'b', 'c', 'd', 'e', 'f', 'g']; //índice: 0,1,2,3,4,5,6
+        d = d.slice(1, 5); // <---------------------------------------------- POSSÍVEL ERRO ( slice => splice )
+        for (var n = 0; n < d.lenght; n++) {
+            document.write(d[n] + " ");
+            //resultado: b c d e
+        }
+        document.write("<br>POSSÍVEL ERRO (LINHA 706)<br>");
+
+        //método sort()
+        var e = ['3', '7', '4', '10', '6', '2', '5'];
+        e = e.sort();
+        for (var o = 0; o < e.lenght; o++) {
+            document.write(e[o] + "-");
+            //resultado: 10-2-3-4-5-6-7-
+        }
+
+        //método concat()
+        var f = [1, 2, 3, 4];
+        f = f.concat('um', 'dois', 'tres', 'quatro');
+        for (var p = 0; p < f.lenght; p++) {
+            document.write(f[p] + " ");
+            //resultado: 1,2,3,4,um,dois,tres,quatro
+        }
+
+        //método reverse()
+        var g = [1, 2, 3, 4];
+        g.reverse();
+        for (var q = 0; q < g.lenght; q++) {
+            document.write(g[q] + " ");
+            //resultado: 4 3 2 1
+        }
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 22 */
+
+        //Array multidimensional
+        document.write("22)<br>");
+
+        var m = new Array(3); // <==============================================  CRIAR UM ARRAY DE 3 ELEMENTOS
+        for (var l = 0; l < 3; l++) {
+            m[l] = new Array(3); // <========================================  CRIA UM NOVO ARRAY DE 3 ELEMENTOS
+            for (var c = 0; c < 3; c++) {
+                m[l][c] = [l + c + 1]; // <================================  ATRIBUI VALORES A CADA POSICAO DO ARRAY
+            }
+        }
+        //EXIBI OS VALORES DA MATRIZ
+        for ( /*var*/ l = 0; l < 3; l++) {
+            for ( /*var*/ c = 0; c < 3; c++) {
+                document.write("[" + m[l][c] + "]");
+            }
+            document.write("<br>");
+        }
+        /*===========
+          [1][2][3]
+          [2][3][4]
+          [3][4][5]
+        ===========*/
+
+        var n = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ];
+        for (o = 0; o < 3; o++) {
+            document.write(n[o][0] + " ");
+            //resultado: 1 4 7
+        }
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 23 */
+
+        //Funções
+        document.write("23)<br>");
+
+        /*===========================================
+        < script type="text/javascript" >
+            function nomeFuncao(<valores externos>){
+                <comandos>
+                <comandos>
+                .....
+                <comandos>
+            
+                return<valor a retornar>;
+            }
+        < /script >
+        ===========================================*/
+
+        function dobro(x) {
+            return x * 2;
+        }
+        var n = dobro(4);
+        document.write(n);
+        //resultado: 8
+    </script>
+    <script type="text/javascript">
+        function dobro(x) {
+            return x * 2;
+        }
+
+        function somar(a, b) {
+            return a + b;
+        }
+
+        function nPar(n) {
+            if (n % 2 == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function somaIntervalo(x, y) {
+            var soma = 0;
+            for (var i = x; i < y; i++) {
+                soma += i;
+            }
+            return soma;
+        }
+
+        var n = dobro(4);
+        document.write("<br>Dobro(4): " + n);
+
+        var soma = somar(2, n);
+        document.write("<br>Somar(2,n): " + soma);
+
+        document.write("<br>nPar(2): " + nPar(2));
+
+        var somatoria = somaIntervalo(1, 5);
+        document.write("<br>somaIntervalo(1,5): " + somatoria);
+        /*=====================
+        resultados:
+
+        Dobro(4): 8
+        Somar(2,n): 10
+        nPar(2): true
+        somaIntervalo(1,5): 15
+        =====================*/
+    </script>
+    <script type="text/javascript">
+        //Função Recursiva
+        function fatorial(n) {
+            if ((n == 0) || (n == 1)) {
+                return 1;
+            } else {
+                return (n * fatorial(n - 1));
+            }
+        }
+        document.write("<br>Fatorial(1)= " + fatorial(1));
+        document.write("<br>Fatorial(2)= " + fatorial(2));
+        document.write("<br>Fatorial(3)= " + fatorial(3));
+        document.write("<br>Fatorial(4)= " + fatorial(4));
+        document.write("<br>Fatorial(5)= " + fatorial(5));
+        /*==========================
+        resultados:
+
+        Fatorial(1)=1            (1)
+        Fatorial(2)=2          (2*1)
+        Fatorial(3)=6        (3*2*1)
+        Fatorial(4)=24     (4*3*2*1)
+        Fatorial(5)=120  (5*4*3*2*1)
+        ==========================*/
+    </script>
+    <script type="text/javascript">
+        //Manipulação de Funções
+
+        function somarDobro(a, b) {
+            function dobro(n) {
+                return n * 2;
+            }
+            return dobro(a) = dobro(b);
+        }
+        document.write("<br>Soma do dobro(2,3)= " + somarDobro(2, 3));
+        document.write("<br>Soma do dobro(5,2)= " + somarDobro(5, 2));
+        document.write("<br>Soma do dobro(2,2)= " + somarDobro(2, 2));
+        document.write("<br>Soma do dobro(3,3)= " + somarDobro(3, 3));
+        /*=====================
+        resultados:
+
+        Soma do dobro(2,3)= 10
+        Soma do dobro(5,2)= 14
+        Soma do dobro(2,2)= 8
+        Soma do dobro(3,3)= 12
+        =====================*/
+    </script>
+    <script type="text/javascript">
+        /*===========================
+                            maneira correta de acessar e
+                            passar parâmetros dentro de
+                            uma função interna (que está
+                            dentro de outra função)
+                            ===========================*/
+        function externo(a) {
+            function interno(b) {
+                return a * (b + 1);
+            }
+            return interno;
+        };
+        document.write("<br>Função externo(2)(3)= " + externo(2)(3));
+        //resultado: Função externo(2)(3)= 8
+    </script>
+    <script type="text/javascript">
+        //funções alinhadas
+        function valor1(a) {
+            function valor2(b) {
+                function valor3(c) {
+                    document.write("<br>Valor das somas= " + (a + b + c));
+                }
+                return valor3(5); // <============= PODE SER QUE PRECISE QUE RETIRAR O RETURN POSTERIORMENTE
+            }
+            return valor2(2); // <================= PODE SER QUE PRECISE QUE RETIRAR O RETURN POSTERIORMENTE
+        }
+        var x = valor1(1);
+        //resultado: Valor das somas= 8
+    </script>
+    <script type="text/javascript">
+        //Podemos ir além no uso das funções, com o uso das Closures
+        var pessoa = function(nome) { // *
+            var idade;
+            return {
+                setNome: function(newNome) {
+                    nome = newNome;
+                },
+                getNome: function() {
+                    return nome;
+                },
+                setIdade: function(newIdade) {
+                    idade = newIdade;
+                },
+                getIdade: function() {
+                    return idade;
+                }
+            }
+        }
+        var aluno = pessoa('Eduardo'); // *
+        document.write("<br>Nome do aluno: " + aluno.getNome());
+        aluno.setNome('João'); //alterado o nome para João
+        aluno.setIdade(20);
+        document.write("<br>Idade= " + aluno.getIdade());
+        document.write("<br>Nome atualizado: " + aluno.getNome());
+        // *Pessoa
+        /*====================
+        Nome do aluno: Eduardo
+        Idade: 20
+        Nome atualizado: João
+        ====================*/
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 24 */
+
+        //Objetos
+        document.write("24)<br>");
+
+        var objetoCarro = {
+            nome: "Camaro",
+            marca: "GM",
+            potencia: 300,
+            cor: "Amarelo",
+            preco: 200000
+        };
+
+
+        //Atributos de objetos ( objeto.propriedade; )
+        var carro = {
+            modelo: "Camarom",
+            marca: "GG",
+            potencia: 300,
+            cor: "Amarelo",
+            preco: 200000
+        };
+        document.write("Comprei um " + carro.modelo + ", da cor " + carro.cor + "!");
+        document.write("<br>Já tive outros veículos da " + carro.marca + ". Inverti mais de R$" + carro.preco + "!");
+        /*====================================================
+        Comprei um Camarom, da cor Amarelo!
+        Já tive outros veículos da GG. Investi mais de 200000!
+        ====================================================*/
+
+
+        /*=================================
+        O comando this é uma palavra chave
+        que representa o próprio objeto e
+        posteriormente uma propriedade:
+        this.propriedade;
+        =================================*/
+        carro = { // <=== TALVEZ TENHA QUE IMPLEMENTAR VAR
+            modelo: "Camarom",
+            marca: "GG",
+            potencia: 300,
+            cor: "Amarelo",
+            preco: 200000,
+            modeloMarca: function() {
+                return this.modelo + " da marca " + this.marca;
+            }
+        };
+        document.write("<br>Comprei um " + carro.modelo + ", da cor " + carro.cor + "!");
+        document.write("<br>Já tive outros veículos da " + carro.marca + ". Inverti mais de R$" + carro.preco + "!");
+        document.write("<br>Todos querer ter ou" + carro.modeloMarca() + "!");
+        /*====================================================
+        Comprei um Camarom, da cor Amarelo!
+        Já tive outros veículos da GG. Investi mais de 200000!
+        Todos querem ter o Camarom da marca GG!
+        ====================================================*/
+
+
+        //Métodos de objetos
+        /*==================================================================================
+        Os métodos são ações executadas por objetos. Considerando um carro comoum objeto,
+        algumas ações possíveis seriam:
+            andar()
+            parar()
+            virar_Direita()
+            virar_Esquerda()
+            estacionar()
+        A seus objetos instanciados, sempre que necessário, é possível criar métodos que
+        correspondam a uma ação do objeto.
+        Veja mais em:
+        <https://www.w3schools.com/js/js_objects.asp>
+        <https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects>
+        ==================================================================================*/
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <script type="text/javascript">
+        /* 25 */
+
+        //Objetos (Math, Date, String)
+        document.write("25)<br>");
+
+        //Objeto Date ( var variavel=new Date(); )
+        var hoje = new Date(); //TALVEZ SEM ESPAÇO, VERIFICAR NA EXECUÇÃO
+        var fimANO = new Date(2023, 12, 31, 23, 59, 59, 999); //Determina o último segundo do ano
+        var segundosRestantes = (fimANO.getTime() - hoje.getTime()) / 1000; //Milisegundos
+        var diasRestantes = (segundosRestantes / 60) / 60 / 24;
+        document.write(hoje);
+        document.write("<br>" + fimANO);
+        document.write("<br>Segundos: " + Math.floor(segundosRestantes));
+        document.write("<br>Dias: " + Math.floor(diasRestantes));
+        /*============================================================
+        Wed Jun 07 2017 22:15:02 GMT-0300(Horário oficial do Brasil)
+        Sun Dec 31 2023 23:59:59 GMT-0200(Horário brasileiro de verão)
+        Segundos: 17887497935
+        ============================================================*/
+    </script>
+    <script type="text/javascript">
+        var hoje = new Date();
+        var fimANO = new Date(2023, 12, 31, 23, 59, 59, 999);
+        var segundosRestantes = (fimANO.getTime() - hoje.getTime()) / 1000;
+        var r_dias = segundosRestantes / (24 * 60 * 60);
+        var r_horas = segundosRestantes / (60 * 60);
+        document.write(hoje);
+        document.write("<br>" + fimANO);
+        document.write("<br>Segundos: " + Math.round(segundosRestantes));
+        document.write("<br>Dias: " + Math.round(r_dias));
+        document.write("<br>Horas: " + Math.round(r_horas));
+        /*============================================================
+        Wed Jun 07 2017 22:19:22 GMT-0300(Horário oficial do Brasil)
+        Sun Dec 31 2023 23:59:59 GMT-0200(Horário brasileiro de verão)
+        Segundos: 17887497237
+        Dias: 207
+        Horas: 4969
+        ============================================================*/
+    </script>
+    <script type="text/javascript">
+        //toUTCString (converte um valor hora para o formato UTC(zero))
+        var x = new Date();
+        document.write("<br>" + x.toUTCString());
+
+        //getDay (Captura o dia da semana, valores de 0 a 6)
+        var y = new Date();
+        document.write("<br>" + y.getDay());
+
+        //getHours (Captura a hora atual do sistema)
+        var z = new Date();
+        document.write("<br>" + z.getHours());
+    </script>
+    <script type="text/javascript">
+        //Objeto String
+        var valor = "Objeto String";
+        document.write("<br>" + valor.length);
+        var valor = "Objeto\"String\"";
+        document.write("<br>" + valor);
+        var valor = "Objeto\"String\"-Programação de Interfaces com String";
+        document.write("<br>" + valor.toLowerCase());
+        document.write("<br>" + valor.toUpperCase());
+        document.write("<br>" + valor.indexOf("String"));
+        document.write("<br>" + valor.lastIndexOf("String"));
+        document.write("<br>" + valor.search("String"));
+        document.write("<br>" + valor.slice(814));
+        document.write("<br>" + valor.replace("String", "DATE"));
+        document.write("<br>" + valor.replace("/String/g", "DATE")); //document.write("<br>"+valor.replace(/String/g,"DATE"));
+    </script>
+    <script type="text/javascript">
+        //toLowerCase (converte toda uma string para caixa baixa(letra minúscula))
+        var a = "Programação de Interfaces";
+        document.write("<br>" + a.toLowerCase());
+
+        //toUpperCase (converte toda uma string para caixa alta(letra maiúscula))
+        var b = "Programação de Interfaces";
+        document.write("<br>" + b.toUpperCase());
+
+        //indexOf (Apresenta o valor índice da primeira ocorrência sobre a string indicada)
+        var c = "Programação de Interfaces";
+        document.write("<br>" + c.indexOf("de"));
+
+        //replace (troca as strings encontradas (variavel.replace("string_antiga","string_nova")) )
+        var d = "Programação de Interfaces";
+        document.write("<br>" + d.replace("de", "com"));
+
+        //concat (unir duas ou mais strings)
+        var e = "Programação de Interfaces";
+        var valor_fim = "Javascript";
+        document.write("<br>" + e.concat("com", valor_fim));
+        //resultado: Programação de Interfaces com Javascript
+
+        //length (exibe a quantidade de caracteres existente em uma variável)
+        var f = "Programação de Interfaces";
+        document.write("<br>" + f.length);
+        //resultado: 25
+    </script>
+    <script type="text/javascript">
+        //Objeto Math
+        document.write("<br>" + Math.PI); // 3.141592653589793
+        document.write("<br>" + Math.round(3.14159)); // 3
+        document.write("<br>" + Math.pow(3, 2)); // 9
+        document.write("<br>" + Math.sqrt(9)); // 3
+        document.write("<br>" + Math.abs(-56.351)); // 56.351
+        document.write("<br>" + Math.ceil(4.3)); // 5
+        document.write("<br>" + Math.floor(4.8)); // 4
+        document.write("<br>" + Math.min(2, 8, 6, 4, 8, 1)); // 1
+        document.write("<br>" + Math.max(2, 8, 6, 4, 8, 1)); // 8
+        document.write("<br>" + Math.random()); // nº real entre 0 a 1
+    </script>
+    <script type="text/javascript">
+        //Math.PI (retorna o nº PI)
+        document.write("<br>" + Math.PI);
+        //resultado: 3.141592653589793
+
+        //Math.round (arredonda um valor numérico para o tipo inteiro)
+        document.write("<br>" + Math.round(3.141592653589793));
+        //resultado: 3
+
+        //Math.pow (calcula a potência de um valor, recebendo dois valores, primeiro a base,segundo expoente)
+        document.write("<br>" + Math.pow(3, 2));
+        //resultado: 9
+
+        //Math.abs (calcula o valor absoluto de uma variavel ou dado)
+        document.write("<br>" + Math.abs(-56.351));
+        //resultado: 56.351
+
+        //Math.ceil (arredonda um valor em dado inteiro para cima)
+        document.write("<br>" + Math.ceil(4.3));
+        //resultado: 5
+
+        //Math.floor (arredonda um calor em dado inteiro para baixo)
+        document.write("<br>" + Math.floor(4.8));
+        //resultado: 4
+
+        //Math.min (informa o menor valor de uma sequência numérica)
+        document.write("<br>" + Math.min(2, 8, 6, 4, 8, 1));
+        //resultado: 1
+
+        //Math.max (informa o maior valor de uma sequência numérica)
+        document.write("<br>" + Math.max(2, 8, 6, 4.45, 18, 1));
+        //resultado: 18
+
+        //Math.random (informa um número real e aleatório entre 0 e 1)
+        document.write("<br>" + Math.random());
+        //resultado: 0.7423304836265743
+    </script>
+
+</body>
+<br>
+
+<body>
+
+    <script type="text/javascript">
+        /* 26 */
+
+        //Eventos
+        document.write("26)<br>");
+
+        function abrir_Bau() {
+            document.getElementById("bau").src = "bau_aberto.jpg";
+        }
+
+        function fechar_Bau() {
+            document.getElementById("bau").src = "bau_fechado.jpg";
+        }
+    </script>
+    <img src="bau_fechado.jpg" id="bau" onMouseOver="abrir_Bau()" onMouseOut="fechar_Bau()">
+    <!------------------------------------------------------------
+            onMouseOver() = Evento capturado no momento em que o
+            usuário posiciona o mouse acima do elemento determinado.
+
+            onMouseOut() = Evento capturado no momento em que o
+            usuário posiciona o mouse para fora do elemento
+            determinado, ou seja, ele estava com o mouse acima do
+            elemento e retirou o ponteiro do mouse.
+        ------------------------------------------------------------->
+    <script type="text/javascript">
+        //
+        function alterar_Bau(x) {
+            var img_bau;
+            if (x == 1) {
+                img_bau = "bau_aberto.jpg";
+            } else {
+                img_bau = "bau_fechado.jpg";
+            }
+            document.getElementById("bau").src = "bau_fechado.jpg";
+        }
+    </script>
+    <img src="bau_fechado.jpg" id="bau" onMouseOver="abrir_Bau()" onMouseOut="fechar_Bau()">
+    <script type="text/javascript">
+        //
+        var magica = false;
+
+        function alterar_Bau(x) {
+            var img_bau;
+            if (x == 1 && magica == false) {
+                img_bau = "bau_aberto.jpg";
+            } else {
+                img_bau = "bau_fechado.jpg";
+            }
+            document.getElementById("bau").src = "bau_fechado.jpg";
+        }
+    </script>
+    <img src="bau_fechado.jpg" id="bau" onMouseOver="abrir_Bau()" onMouseOut="fechar_Bau()">
+
+</body>
+<br>
+
+<body onLoad="alert('Mensagem inicial!')">
+
+    <!-- . -->
+    <script type="text/javascript">
+        //
+        function clicar_Down() {
+            alert("Você clicou no botão ");
+        }
+
+        function clicar_Up() {
+            alert("Você SOLTOU o botão ");
+        }
+    </script>
+    <form>
+        <input type="button" value="Clique aqui" onMouseDown="clicar_Down()" onMouseOut="clicar_Up()">
+    </form>
+    <!-----------------------------------------------------------------
+        onLoad: Evento capaz de inciar uma funcionalidadena inicialização
+        do corpo do HTML (body).
+
+        onFocus: Evento destinado a disparar a ação de foco em um elemento.
+        Sua execução permanecerá ativa enquanto o objeto estiver focado. Em
+        outras ocasiões, se não tratado, pode se tornar um inconveniente.
+        ------------------------------------------------------------------>
+
+</body>
+<br>
+
+<body onLoad="alert('Mensagem inicial!')">
+
+    <!-- . -->
+    <script type="text/javascript">
+        function clicar_Down() {
+            alert("Você clicou no botão");
+        }
+
+        function clicar_Up() {
+            alert("Você SOLTOU o botão");
+        }
+
+        function focar_Elemento() {
+            alert("Você focou um elemento!");
+        }
+    </script>
+    <form>
+        <b>Nome</b>
+        <input type="text" id="nome" onFocus="focar_Elemento()">
+        <b>Endereço</b>
+        <input type="text" id="endereço">
+        <input type="button" name="btn" value="Clique aqui" onMouseDown="clicar_Down()" onMouseUp="clicar_Up()">
+    </form>
+
+</body>
+<!-------------------------------------------TALVEZ tenha que retirar essas 3 linhas (A PRINCÍPIO)-->
+<br>
+<!----------------------------------------------TALVEZ tenha que retirar essas 3 linhas (A PRINCÍPIO)-->
+
+<body onLoad="alert('Mensagem inicial!')">
+    <!--------TALVEZ tenha que retirar essas 3 linhas (A PRINCÍPIO)-->
+
+    <!-- . -->
+    <script type="text/javascript">
+        var aviso = false;
+
+        function clicar_Down() {
+            alert("Você clicou no botão");
+        }
+
+        function clicar_Up() {
+            alert("Você SOLTOU o botão");
+        }
+
+        function focar_Elemento() {
+            if (aviso == false) {
+                alert("Você focou um elemento!");
+                aviso == true;
+            }
+        }
+        document.getElementById("endereço").style.background = "yellow";
+    </script>
+    <form>
+        <input type="text" id="nome" onFocus="focar_Elemento()">
+        <b>Endereço</b>
+        <input type="text" id="endereço">
+        <input type="button" name="btn" value="Clique aqui" onMouseDown="clicar_Down()" onMouseUp="clicar_Up()">
+    </form>
+
+</body>
+<br>
+
+<body>
+
+    <!-- . -->
+    <p>Selecione um novo treinamento a realizar</p>
+    <select id="curso" onChange="alterarCurso()">
+            <option value="Java">Java</option>
+            <option value="C#">C#<!--</option>-->
+            <option value="Linguagem C">Linguagem C</option>
+            <option value="JavaScript">JavaScript<!--</option>-->
+        </select>
+    <p>Esperamos participar de mais um treinamento</p>
+    <p id="texto"></p>
+    <script>
+        function alterarCurso() {
+            var x = document.getElementById("curso").value;
+            document.getElementById("texto").innerHTML = "Escolha: " + x;
+        }
+    </script>
+
+</body>
+<br>
+
+<body>
+
+    <!-- 27 -->
+    <p>27)</p><br>
+
+    <p>Primeira linha.</p>
+    <p>Segunda linha.</p>
+    <p>Terça linha.</p>
+    <p>Quarta linha.</p>
+    <div>
+        Element DIV.
+        <br>Primeira linha div.
+        <br>Segunda linha.
+        <br>Terça linha.
+        <br>Quarta linha.
+    </div>
+    <p>Quinta linha de parágrafo.</p>
+    <button onclick="alterar()">Clique para alterar o p</button>
+    <button onclick="alterarDIV()">CLique para alterar o div</button>
+    <script>
+        function alterar() {
+            document.querySelector("p").style.backgroundColor = "green";
+        }
+
+        function alterarDIV() {
+            document.querySelector("div").style.backgroundColor = "gray";
+        }
+    </script>
+
+</body>
+<br>
+
+<body>
+
+    <!-- . -->
+    <p>Primeira linha.</p>
+    <p>Segunda linha.</p>
+    <p>Terça linha.</p>
+    <p>Quarta linha.</p>
+    <div>
+        Element DIV.
+        <br>Primeira linha div.
+        <br>Segunda linha.
+        <br>Terça linha.
+        <br>Quarta linha.
+    </div>
+    <button onclick="alterar()">Clique p/ alterar o (p)</button>
+    <button onclick="alterarDIV()">Clique p/ alterar o (div)</button>
+    <button onclick="alternar()">Clique p/ alternar a linha (p)</button>
+    <button onclick="limparTodas()">Clique p/ limpar todas as linhas (p)</button>
+    <script>
+        function limparTodas() {
+            var x = querySelectorAll("p");
+            for (var i = 0; x.lenght; i++) {
+                x[i].style.backgroundColor = " ";
+            }
+        }
+
+        function alterar() {
+            var x = querySelectorAll("p");
+            for (var i = 0; x.lenght; i++) {
+                x[i].style.backgroundColor = "green";
+            }
+        }
+
+        function alterarDIV() {
+            var x = document.querySelectorAll("p");
+            for (var i = 0; x.lenght; i++) {
+                if (i % 2 == 0) {
+                    x[i].style.backgroundColor = "green";
+                } else {
+                    x[i].style.backgroundColor = "blue";
+                }
+            }
+        }
+    </script>
+
+</body>
+<br>
+
+<body>
+
+    <p id="informativo">Valor?</p>
+    <button onclick="buscarMedidas()">Verifique as medidas da janela</button>
+    <script>
+        function buscarMedidas() {
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            doc = document.getElementById("informativo");
+            doc.innerHTML = "Largura: " + w + " | Altura: " + h;
+        }
+    </script>
+
+</body>
+<br>
+
+<body>
+
+    <!-- . -->
+    <p id="informativo">valor...</p>
+    <button onclick="buscarMedidas()">Verifique as medidas da janela</button>
+    <buttom onclick="imprimir()">Solicitar impressão</buttom>
+    <buttom onclick="voltar()">Voltar o histórico</buttom>
+    <buttom onclick="abrirGuia()">Abri um nova guia</buttom>
+    <buttom onclick="abrirPagina()">Abri uma nova página</buttom>
+    <script>
+        function buscarMedidas() {
+            var w = window.innerWidth;
+            var h = window.innerHeigth;
+            doc = document.getElementById("informativo");
+            doc = innerHTML = "Largura: " + w + " | Largura: " + h;
+        }
+
+        function imprimir() {
+            window.print();
+        }
+
+        function voltar() {
+            history.back();
+        }
+        var windowObjectReference;
+        var strWindowFeaturesPAG = "menubar=no,location=no,resizable=no,scrollbars=no,status=no";
+
+        function abrirPagina() {
+            windowObjectReference = window.open("http://uninove.br/", "UNINOVE", strWindowFeaturesPAG);
+        }
+        var strWIndowFeaturesGUIA = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes"
+
+        function abrirGuia() {
+            windowObjectReference = window.open("http://uninove.br/", "UNINOVE", strWIndowFeaturesGUIA);
+        }
+    </script>
+
+</body>
+<br>
+
+<body>
+
+    <!-- Ajax e JSON -->
+    <p>28)</p>
+
+    <!-- Ajax -->
+    <div>
+        <h2>Objeto XMLHttpRequest</h2>
+        <button type="button" onclick="carregarArquivo()">Carregar dados</button>
+        <p id="retorno"></p>
+    </div>
+    <script>
+        function carregarArquivo() {
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("retorno").innerHTML = this.responseText;
+                }
+            };
+            ajax.open("GET", "ajax_dados.txt", true);
+            ajax.send();
+        }
+    </script>
+
+</body>
+<br>
+
+<body>
+
+    <!-- JSON -->
+    <script>
+        Array: ["SP", "RJ", "MG", "ES"];
+
+        Objeto
+            [{
+                "ano": 1990,
+                "altura": 1.80,
+                "nome": "João"
+            }]
+
+        Array_de_objetos
+            [{
+                "titulo": "JSON x XML",
+                "resumo": "Modelos de dados",
+                "ano": 2017
+            }, {
+                "titulo": "JSON e AJAX",
+                "resumo": "A dupla dinâmica em ação",
+                "ano": 2017
+            }]
+    </script>
+
+</body>
+<br>
+
+<body>
+
+    //
+
+</body>
+<br>
+
+<body>
+
+    <!-- Formulários e Ajax -->
+    <p>29)</p>
+    <div></div>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Cadastro do Clientes</legend>
+                <img src="pergunta.jpg" id="idProcurar" onclick="procurarCliente()">
+                <div>
+                    <label>Nome</label>
+                    <!--<img src="pergunta.jpg" id="idProcurar" onclick="procurarCliente()">-->
+                    <div>
+                        <input id="idNome" name="idNome" type="text">
+                    </div>
+                </div>
+                <div>
+                    <label>CPF</label>
+                    <div>
+                        <input id="idCPF" name="idCPF" type="text">
+                    </div>
+                </div>
+                <div>
+                    <label>Endereço</label>
+                    <div>
+                        <input id="idEndereco" name="idEndereco" type="text">
+                    </div>
+                </div>
+                <div>
+                    <label>CEP</label>
+                    <div>
+                        <input id="idCEP" name="idCEP" type="text">
+                    </div>
+                </div>
+                <div>
+                    <label>Bairro</label>
+                    <div>
+                        <input id="idBairro" name="idBairro" type="text">
+                    </div>
+                </div>
+                <div>
+                    <label>e-mail</label>
+                    <div>
+                        <input id="idEmail" name="idEmail" type="email">
+                    </div>
+                </div>
+                <div>
+                    <label>Plano</label>
+                    <div>
+                        <select id="idPlano" name="idPlano" class="form-control">
+                                <option value="">Escolha uma opção</option>
+                                <option value="1">Normal</option>
+                                <option value="2">Express</option>
+                                <option value="3">VIP</option>
+                            </select>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <label></label>
+                    <div>
+                        <button id="idConfirmar" name="idConfirmar" class="btn btn-primary">Cadastrar</button>
+                        <button id="idCancelar" name="idCancelar" class="btn btn-danger">Cancelar</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div></div>
+    <script>
+        function procurarCliente() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var valor = "";
+                    var cliente_encontrado = false;
+                    myObj = JSON.parse(this.responseText);
+                    nomeProcura = document.getElementById("idNome");
+
+                    for (i in myObj.cliente) {
+                        if (myObj.cliente[i].nome == nomeProcura.value) {
+                            document.getElementById("idCPF").value = myObj.cliente[i].cpf;
+                            document.getElementById("idEndereco").value = myObj.cliente[i].endereco;
+                            document.getElementById("idCEP").value = myObj.cliente[i].cep;
+                            document.getElementById("idBairro").value = myObj.cliente[i].bairro;
+                            document.getElementById("idEmail").value = myObj.cliente[i].email;
+                            document.getElementById("idPlano").focus();
+                            cliente_encontrado = true;
+                        }
+                    }
+                    if (cliente_encontrado == false) {
+                        alert("Cliente não encontrado!");
+                    }
+                }
+            };
+            xmlhttp.open("GET", "dados_cliente.json", true);
+            xmlhttp.send();
+        }
+    </script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+<body>
+
+    <!--
+        <br>
+        <br>
+
+
+        <script type="text/javascript">
+
+            //
+
+            //
+
+        </script>
+        -->
+
+</body>
+
+</html>
